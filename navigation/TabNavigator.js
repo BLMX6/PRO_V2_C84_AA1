@@ -16,9 +16,9 @@ const BottomTabNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-          if (route.name === "Feed") {
+          if (route.name === "Índice") {
             iconName = focused ? "home" : "home-outline";
-          } else if (route.name === "Create Story") {
+          } else if (route.name === "Crear historia") {
             iconName = focused ? "add-circle" : "add-circle-outline";
           }
           return (
