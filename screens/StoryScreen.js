@@ -44,7 +44,7 @@ export default class StoryScreen extends Component {
 
   render() {
     if (!this.props.route.params) {
-      this.props.navigation.navigate("Home");
+      this.props.navigation.navigate("Inicio");
     } else if (this.state.fontsLoaded) {
       SplashScreen.hideAsync();
       return (
@@ -58,7 +58,7 @@ export default class StoryScreen extends Component {
               ></Image>
             </View>
             <View style={styles.appTitleTextContainer}>
-              <Text style={styles.appTitleText}>Storytelling App</Text>
+              <Text style={styles.appTitleText}>App para contar historias</Text>
             </View>
           </View>
           <View style={styles.storyContainer}>
@@ -100,7 +100,7 @@ export default class StoryScreen extends Component {
               <View style={styles.actionContainer}>
                 <View style={styles.likeButton}>
                   <Ionicons name={"heart"} size={RFValue(30)} color={"white"} />
-                  <Text style={styles.likeText}>12k</Text>
+                  <Text style={styles.likeText}>12m</Text>
                 </View>
               </View>
             </ScrollView>
