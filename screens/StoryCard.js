@@ -46,7 +46,7 @@ export default class StoryCard extends Component {
         <TouchableOpacity
           style={styles.container}
           onPress={() =>
-            this.props.navigation.navigate("StoryScreen", {
+            this.props.navigation.navigate("PantallaDeHistoria", {
               story: this.props.story
             })
           }
@@ -71,7 +71,7 @@ export default class StoryCard extends Component {
             <View style={styles.actionContainer}>
               <View style={styles.likeButton}>
                 <Ionicons name={"heart"} size={RFValue(30)} color={"white"} />
-                <Text style={styles.likeText}>12k</Text>
+                <Text style={styles.likeText}>12m</Text>
               </View>
             </View>
           </View>
